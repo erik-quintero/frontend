@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pastedona</title>
+</head>
+<body>
+        
+    <!-- barra de navegacion -->
+    <ul class="topnav">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a class="active" href="./pedido.html">Realizar-pedido</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li class="right"><a href="./nosotros.html">Nosotros</a></li>
+      </ul>
+
+      <br>
+    <form action="pedido.js">
+        <label for="Nombre">Nombre completo </label><br>
+        <input type="text" placeholder="Nombre" id="Nombre" name="Nombre">
+        <br>
+        <label for="tel1">Numero de Teléfono</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10" placeholder="xx xx xx xx xx">
+        <br>
+        <label for="correo1">Correo electronico</label><br>
+        <input type="email" id="correo1" name="correo1" placeholder="hola@correo.com">
+        <br>
+        <br>
+        <p>Seleccione el tamaño del pastel</p>
+        <input type="radio" id="ch" name="tamaño" value="Chico">
+        <label for="ch">Chico</label>
+        <input type="radio" id="me" name="tamaño" value="Mediano">
+        <label for="me">Mediano</label>
+        <input type="radio" id="gr" name="tamaño" value="Grande">
+        <label for="me">Grande</label>
+
+        <p>Seleccione el sabor </p>
+        <select name="sabor" id="sabor">
+            <option value="Vainilla">Vainilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Napolitano">Napolitano</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Queso">Queso</option>
+            <option value="Limon">Limon</option>
+            <option value="Relleno">Relleno</option>
+        </select>
+            <br>
+            <input type="radio" id="Relleno" name="sabor" value="Frutas">
+            <label for="sabor">Frutas misxtas</label>
+            <input type="radio" id="Relleno" name="sabor" value="Durazno">
+            <label for="sabor">Durazno</label>
+            <input type="radio" id="Relleno" name="sabor" value="Fresa">
+            <label for="sabor">Fresa</label>
+            <input type="radio" id="Relleno" name="sabor" value="Nutella">
+            <label for="sabor">Nutella</label>
+            <input type="radio" id="Relleno" name="sabor" value="Kiwi">
+            <label for="sabor">Kiwi</label>            
+            <input type="radio" id="sabor" name="sabor" value="Personalizado">          
+            <label for="sabor">Personalizado</label>
+            <input type="text" placeholder="Sabor" id="Relleno" name="sabor">
+
+        <p>Escoja el tipo de decoracion</p>
+        <input type="radio" id="deco" name="decoracion" value="Sencillo">
+        <label for="deco">Sencillo</label>
+
+            <br>
+            <input type="radio" id="sen" name="decoracion" value="Chantilli">
+            <label for="sen">Chantilli</label>
+            <input type="radio" id="sen" name="decoracion" value="Crema">
+            <label for="sen">Crema pastelera</label>
+            <input type="radio" id="sen" name="decoracion" value="Fondant">
+            <label for="sen">Fondant</label>
+            
+        <input type="radio" id="deco" name="decoracion" value="Infantil">
+        <label for="deco">Infantil</label>
+
+            <br>
+            <input type="radio" id="inf" name="decoracion" value="Chantilli">
+            <label for="inf">Niño</label>
+
+                <input type="radio" id="infsel" name="decoracionn" value="spider">
+                <label for="infsel">Spiderman</label>
+                <input type="radio" id="infsel" name="decoracionn" value="xmen">
+                <label for="infsel">X-men</label>
+                <input type="radio" id="infsel" name="decoracionn" value="super">
+                <label for="infsel">Superman</label>
+                <input type="radio" id="infsel" name="decoracionn" value="ave">
+                <label for="infsel">Avengers</label>
+                <input type="radio" id="infsel" name="decoracionn" value="hora">
+                <label for="infsel">Hora de aventura</label>
+             <br>   
+            <input type="radio" id="inf" name="decoracion" value="Crema">
+            <label for="inf">Niña</label>
+            
+                <input type="radio" id="infsel" name="decoracionn" value="ariel">
+                <label for="infsel">Ariel</label>
+                <input type="radio" id="infsel" name="decoracionn" value="mohana">
+                <label for="infsel">Mohana</label>
+                <input type="radio" id="infsel" name="decoracionn" value="lilo">
+                <label for="infsel">Lilo & Stich</label>
+                <input type="radio" id="infsel" name="decoracionn" value="encanto">
+                <label for="infsel">Encanto</label>
+                <input type="radio" id="infsel" name="decoracionn" value="Frozzen">
+                <label for="infsel">Frozzen</label>
+        <br>
+        <input type="radio" id="deco" name="decoracion" value="Ocaciones">
+        <label for="deco">Ocaciones</label> 
+
+                <input type="radio" id="ocsel" name="decoracionn" value="grad">
+                <label for="ocsel">Graduaciones</label>
+                <input type="radio" id="ocsel" name="decoracionn" value="cum">
+                <label for="ocsel">Cumpleaños</label>
+                <input type="radio" id="cosel" name="decoracionn" value="ani">
+                <label for="ocsel">Aniversarios</label>
+                <input type="radio" id="ocsel" name="decoracionn" value="baby">
+                <label for="ocsel">Babyshower</label>
+                    <br>
+                    <label for="perso">Escriba el nombre de a quien va referido </label><br>
+                    <input type="text" placeholder="Escriba el nombre" id="perso" name="perso">
+                    <br>
+
+        <br>
+        <input type="radio" id="deco" name="decoracion" value="Personalizadoo">
+        <label for="deco">Personalizado</label>
+            <label for="perso">Describa como lo quiere </label><br>
+            <input type="text" placeholder="Describa su pastel" id="perso" name="perso">
+            <br>
+          <br>
+        <input type="reset">
+        <input type="submit">
+        <br><br>
+    </form>
+    
+<footer>
+    <p>Aqui iran algunos datos de navegacion cuando la pagina este mas avanzada</p>
+</footer>
+</body>
+</html>
