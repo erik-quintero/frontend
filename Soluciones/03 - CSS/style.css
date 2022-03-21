@@ -362,7 +362,7 @@ ul.topnav li.right {float: right;}
   
 }
 .footer-content a{
-  padding top:5px;
+  padding-top: 5px;
 }
 #izquierda{
   text-align: left;
@@ -373,8 +373,8 @@ ul.topnav li.right {float: right;}
   float:left;
   vertical-align:left;
   left:0%;
-transform: translate(0, -50%);
-margin-left:0%;
-padding: 48px 0px;
+  transform: translate(0, -50%);
+  margin-left:0%;
+  padding: 48px 0px;
 
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokedex-propio.css" type="text/css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <div id="pokedex">
+        <div id="izq" style="height: 50%;">izquierda
+            <div id="circulo-sup-iz-gris"> </div>
+            <div id="circulo-sup-iz-azul"> </div>
+            <div id="circulo-sup-iz-azul-cl-g"></div>
+            <div id="circulo-sup-iz-azul-cl-p"></div>
+            <div id="circulo-sup-iz-rojo"></div>
+            <div id="circulo-sup-iz-amarillo"></div>
+            <div id="circulo-sup-iz-verde"></div>
+            <div id="circulo-sup-iz-rojo-f"></div>
+            <div id="circulo-sup-iz-amarillo-f"></div>
+            <div id="circulo-sup-iz-verde-f"></div>
+            <div id="cuadro-iz-sup-cir"></div>
+            <div id="cuadro-medio"></div>
+            <!-- aqui iran los de la sombra superior-->
+            <div id="cuadro-gris"></div>
+            <div id="circulo-rojo-iz"></div>
+            <div id="circulo-rojo-der"></div>
+            <div id="pantalla"> <!-- aqui se muestran -->
+                <div class="contenedors" id="scroller">
+                    <img src="./pokedex.png" alt="Pokedex"  id="pokeImg" height="100%" width="100%" class="arriba">
+                    <strong>Nombre:   </strong>  <label id="pokeNom">     </label> <br/>
+                    <strong>Tipo:   </strong>  <label id="pokeTipo">    </label> &nbsp; <label id="pokeTipo1"></label> <br/>
+                    <strong>Altura: </strong>  <label id="pokeAltura">  </label> <br/>
+                    <strong>Peso: </strong>  <label id="pokePe">      </label> <br/>
+                    <strong>Estadisticas: </strong> 
+                          <label id="pokeStadistics0"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum0"> </label>
+                          <label id="pokeStadistics1"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum1"> </label>
+                          <label id="pokeStadistics2"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum2"> </label>
+                          <label id="pokeStadistics3"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum3"> </label>
+                          <label id="pokeStadistics4"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum4"> </label>
+                          <label id="pokeStadistics5"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum5"> </label>
+                          <br/>
+                    <strong>Posible movimientos: </strong> <span id="mov"> <label id="movixes"><br id="movixesss"></label> </span> <br/>  
+                  </div> 
+            </div>
+            <input type="text" placeholder="pokemon" id="pokeName" name="pokeName" class="boton-iz" autofocus formtarget="top">
+            <button onclick="fetchPokemon(); window.scroller.scrollTo(0,0)" class="boton-der" > Buscar pokemon </button>
+            
+        </div>
+        <!--   area derecha del pokedex   -->
+        <div id="der" style="height: 50%;">
+            <div id="cuadro-de"></div>
+            <div id="cuadro-de-sup"></div>
+            <div id="cuadro-de-sup-com"></div>
+            <div id="tubo-union"></div>
+            <div id="tubo-union2"></div>
+            <div id="raya-union"></div>
+            <div id="raya-union2"></div>
+            <div id="raya-union3"></div>
+        </div>
+    </div>
+    
+</body>
+<footer>
+    <script src="./pokedex2.js"></script>
+</footer>
+</html>

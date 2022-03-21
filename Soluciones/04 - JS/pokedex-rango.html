@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+    
+    <h1>No pude terminarlo por falta de tiempo, lo mejorare solo llama pero no muestra </h1>
+
+    <div id="pantalla"> <!-- aqui se muestran -->
+        <div class="contenedors" id="scroller">
+            <img src="./pokedex.png" alt="Pokedex"  id="pokeImg" height="100%" width="100%" class="arriba">
+            <strong>Nombre:   </strong>  <label id="pokeNom">     </label> <br/>
+            <strong>Tipo:   </strong>  <label id="pokeTipo">    </label> &nbsp; <label id="pokeTipo1"></label> <br/>
+            <strong>Altura: </strong>  <label id="pokeAltura">  </label> <br/>
+            <strong>Peso: </strong>  <label id="pokePe">      </label> <br/>
+            <strong>Estadisticas: </strong> 
+                  <label id="pokeStadistics0"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum0"> </label>
+                  <label id="pokeStadistics1"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum1"> </label>
+                  <label id="pokeStadistics2"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum2"> </label>
+                  <label id="pokeStadistics3"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum3"> </label>
+                  <label id="pokeStadistics4"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum4"> </label>
+                  <label id="pokeStadistics5"> &nbsp; </label>&nbsp;    <label id="pokeStadisticNum5"> </label>
+                  <br/>
+            <strong>Posible movimientos: </strong> <span id="mov"> <label id="movixes"><br id="movixesss"></label> </span> <br/>  
+          </div> 
+    </div>
+
+    <input type="number" placeholder="numero inferior" id="NumInf" name="NumInf" class="boton-iz" autofocus formtarget="top">
+    <input type="number" placeholder="numero superior" id="NumSup" name="NumSup" class="boton-iz" autofocus formtarget="top">
+    <button onclick="fetchPokemon(); window.scroller.scrollTo(0,0)" class="boton-der" > Buscar pokemon </button>
+
+
+
+</body>
+<footer>
+    <script src="./pokedex3.js"></script>
+</footer>
+</html>

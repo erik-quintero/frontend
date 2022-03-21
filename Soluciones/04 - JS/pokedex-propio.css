@@ -1,0 +1,848 @@
+@media screen and (max-width: 800px) {
+    .pokedex{
+        display: flex;  
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center; 
+        width: 90%;
+        position: relative;
+        align-items: center;
+        align-self: center;
+    }
+    div#izq{
+        width: 90%;
+        text-align: left;
+        position: absolute;
+        float: left;
+        left: 5%;
+        top: 10%;
+        z-index: 1;
+        background-color: yellow;
+
+    }
+    div#der{
+        width: 0%;
+		background-color: blue;
+    }
+	/*  cuadrado base para pokedex lado izquierdo*/
+    div#cuadro-medio{
+		width: 92%;
+		height: 130%;
+		background-color: #d52c27;
+		box-shadow: -5px 0px #5e0000;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+	/* circulo gris superior izquierdo*/
+    div#circulo-sup-iz-gris{
+		width: 12%;
+		height: 12%;
+		background-color: #b6aca3;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 2%;
+		left: 2%;
+		z-index: 3;
+	}
+	/* circulo azul superior izquierdo*/
+    div#circulo-sup-iz-azul{
+		width: 10%;
+		height: 10%;
+		background-color: #407aa6;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 3%;
+		left: 3%;
+		z-index: 3;
+	}
+	/* circulo azul claro grande superior izquierdo*/
+    div#circulo-sup-iz-azul-cl-g{
+		width: 4%;
+		height: 4%;
+		background-color: #d2d1cb;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 4%;
+		left: 5%;
+		z-index: 3;
+	}
+	/* circulo azul claro pequeño superior izquierdo*/
+    div#circulo-sup-iz-azul-cl-p{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #d2d1cb;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 11%;
+		left: 12%;
+		z-index: 3;
+	}
+	/* circulo rojo pequeño superior izquierdo*/
+    div#circulo-sup-iz-rojo{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: red;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 2%;
+		left: 23%;
+		z-index: 4;
+	}
+	/* circulo amarillo pequeño superior izquierdo*/
+    div#circulo-sup-iz-amarillo{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #e5a343;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 2%;
+		left: 31%;
+		z-index: 4;
+	}
+	/* circulo verde pequeño superior izquierdo*/
+    div#circulo-sup-iz-verde{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #3a6f30;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 2%;
+		left: 40%;
+		z-index: 4;
+	}
+	/* circulo rojo pequeño superior izquierdo*/
+    div#circulo-sup-iz-rojo-f{
+		width: 1%;
+		height: 1%;
+		background-color: gray;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 1.5%;
+		left: 22.25%;
+		z-index: 3;
+	}
+	/* circulo amarillo pequeño superior izquierdo*/
+    div#circulo-sup-iz-amarillo-f{
+		width: 1%;
+		height: 1%;
+		background-color: gray;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 1.5%;
+		left: 30.25%;
+		z-index: 3;
+	}
+	/* circulo verde pequeño superior izquierdo*/
+    div#circulo-sup-iz-verde-f{
+		width: 1%;
+		height: 1%;
+		background-color: gray;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 1.5%;
+		left: 39.5%;
+		z-index: 3;
+	}
+
+	/* --- cuadro medio gris, donde se muestra pantalla para mostrar pokemon ---- */
+	div#cuadro-gris{
+		width: 70%;
+		height: 55%;
+		background-color: #e4d1cb;
+		border-radius: 10px;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 28%;
+		left: 10%;
+		z-index: 2;
+	}
+	/* circulo vino pequeño izquierdo*/
+    div#circulo-rojo-iz{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #a86250;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 30%;
+		left: 55%;
+		z-index: 2;
+	}
+	/* circulo vino pequeño derecho*/
+    div#circulo-rojo-der{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #a86250;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 30%;
+		left: 33%;
+		z-index: 2;
+	}
+	/* --- cuadro pantalla negra ---- */
+	div#pantalla{
+		width: 61%;
+		height: 43%;
+		background-color: #272c26;
+		border-radius: 10px;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 36%;
+		left: 15%;
+		z-index: 2;
+	}
+
+	/*---------    botones para la busqueda    ----------*/
+	/* boton izquierdo */
+	.boton-iz{
+		width: 35%;
+		height: 15%;
+		background-color: #53544e;
+		border-radius: 20px;
+		float: left;
+		position: absolute;
+		top: 100%;
+		left: 11%;
+		z-index: 3;
+		color: #fff;
+		text-align: center;
+		border: 0;
+		box-shadow: -4px 6px #5e0000;
+		outline: none;
+	}
+	/* boton derecho */
+	.boton-der{
+		width: 35%;
+		height: 15%;
+		background-color: #53544e;
+		border-radius: 20px;
+		float: left;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		z-index: 3;
+		color: #fff;
+		text-align: center;
+		border: 0;
+		box-shadow: -4px 6px #5e0000;
+	}
+
+	/* ------------------ para hacer scroll en la pantalla ------------------------ */
+	/*   sroll  */
+
+	.contenedors {
+		overflow: scroll;
+		margin: 0rem auto;
+		border: 0;
+		height: 100%;
+		width: 99%;
+		max-width: 100%;
+		background: #272c26;
+		color: #fff;
+		overflow: auto;
+		box-sizing: border-box;
+		padding: 0;
+		scrollbar-color: yellow #800080;
+		scrollbar-width: thin;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-radius: 10px;
+	}
+	/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+	.contenedors::-webkit-scrollbar {
+		-webkit-appearance: none;
+		
+	}
+	.contenedors::-webkit-scrollbar:vertical {
+		width:10px;
+	}
+	.contenedors::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+		display: none;
+	} 
+	.contenedors::-webkit-scrollbar:horizontal {
+		height: 10px;
+	}
+	.contenedors::-webkit-scrollbar-thumb {
+		background-color: #797979;
+		border-radius: 20px;
+		border: 2px solid #f1f2f3;
+	}
+	.contenedors::-webkit-scrollbar-track {
+		border-radius: 10px;  
+	}
+	.contenedors {
+		/*Estilos estándar experimentales (Principalmente Firefox)*/
+		scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+		scrollbar-width: thin;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 700px) {
+    .pokedex{
+        display: flex;  
+        flex-flow: row wrap;
+        font-weight: bold;
+        text-align: center; 
+        width: 90%;
+        position: relative;
+        align-items: center;
+        align-self: center;
+    }
+    div#izq{
+        width: 45%;
+        text-align: left;
+        position: absolute;
+        float: left;
+        left: 5%;
+        top: 10%;
+        z-index: 1;
+        background-color: transparent;
+
+    }
+    div#der{
+        width: 45%;
+		text-align: left;
+        position: absolute;
+        float: left;
+        left: 50%;
+        top: 10%;
+        z-index: 1;
+		background-color: transparent;
+    }
+	/*  cuadrado base para pokedex lado izquierdo*/
+    div#cuadro-medio{
+		width: 92%;
+		height: 130%;
+		background-color: #d52c27;
+		box-shadow: -5px 0px #5e0000;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+	/* circulo gris superior izquierdo*/
+    div#circulo-sup-iz-gris{
+		width: 12%;
+		height: 12%;
+		background-color: #b6aca3;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 2%;
+		left: 2%;
+		z-index: 3;
+	}
+	/* circulo azul superior izquierdo*/
+    div#circulo-sup-iz-azul{
+		width: 10%;
+		height: 10%;
+		background-color: #407aa6;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 3%;
+		left: 3%;
+		z-index: 3;
+	}
+	/* circulo azul claro grande superior izquierdo*/
+    div#circulo-sup-iz-azul-cl-g{
+		width: 4%;
+		height: 4%;
+		background-color: #d2d1cb;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 4%;
+		left: 5%;
+		z-index: 3;
+	}
+	/* circulo azul claro pequeño superior izquierdo*/
+    div#circulo-sup-iz-azul-cl-p{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #d2d1cb;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 11%;
+		left: 12%;
+		z-index: 3;
+	}
+	/* circulo rojo pequeño superior izquierdo*/
+    div#circulo-sup-iz-rojo{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: red;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 2%;
+		left: 23%;
+		z-index: 4;
+	}
+	/* circulo amarillo pequeño superior izquierdo*/
+    div#circulo-sup-iz-amarillo{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #e5a343;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 2%;
+		left: 31%;
+		z-index: 4;
+	}
+	/* circulo verde pequeño superior izquierdo*/
+    div#circulo-sup-iz-verde{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #3a6f30;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 2%;
+		left: 40%;
+		z-index: 4;
+	}
+	/* circulo rojo pequeño superior izquierdo*/
+    div#circulo-sup-iz-rojo-f{
+		width: 1%;
+		height: 1%;
+		background-color: gray;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 1.5%;
+		left: 22.25%;
+		z-index: 3;
+	}
+	/* circulo amarillo pequeño superior izquierdo*/
+    div#circulo-sup-iz-amarillo-f{
+		width: 1%;
+		height: 1%;
+		background-color: gray;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 1.5%;
+		left: 30.25%;
+		z-index: 3;
+	}
+	/* circulo verde pequeño superior izquierdo*/
+    div#circulo-sup-iz-verde-f{
+		width: 1%;
+		height: 1%;
+		background-color: gray;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 1.5%;
+		left: 39.5%;
+		z-index: 3;
+	}
+
+	/* --- cuadro medio gris, donde se muestra pantalla para mostrar pokemon ---- */
+	div#cuadro-gris{
+		width: 70%;
+		height: 55%;
+		background-color: #e4d1cb;
+		border-radius: 10px;
+		border-top-left-radius: 0px;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 28%;
+		left: 10%;
+		z-index: 2;
+	}
+	/* circulo vino pequeño izquierdo*/
+    div#circulo-rojo-iz{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #a86250;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 30%;
+		left: 55%;
+		z-index: 2;
+	}
+	/* circulo vino pequeño derecho*/
+    div#circulo-rojo-der{
+		width: 0.000001%;
+		height: 0.000001%;
+		background-color: #a86250;
+		border-radius: 100%;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 30%;
+		left: 33%;
+		z-index: 2;
+	}
+	/* --- cuadro pantalla negra ---- */
+	div#pantalla{
+		width: 61%;
+		height: 43%;
+		background-color: #272c26;
+		border-radius: 10px;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 36%;
+		left: 15%;
+		z-index: 2;
+	}
+
+	/*---------    botones para la busqueda    ----------*/
+	/* boton izquierdo */
+	.boton-iz{
+		width: 35%;
+		height: 15%;
+		background-color: #53544e;
+		border-radius: 20px;
+		float: left;
+		position: absolute;
+		top: 100%;
+		left: 11%;
+		z-index: 3;
+		color: #fff;
+		text-align: center;
+		border: 0;
+		box-shadow: -4px 6px #5e0000;
+		outline: none;
+	}
+	/* boton derecho */
+	.boton-der{
+		width: 35%;
+		height: 15%;
+		background-color: #53544e;
+		border-radius: 20px;
+		float: left;
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		z-index: 3;
+		color: #fff;
+		text-align: center;
+		border: 0;
+		box-shadow: -4px 6px #5e0000;
+	}
+
+	/* ------------------ para hacer scroll en la pantalla ------------------------ */
+	/*   sroll  */
+
+	.contenedors {
+		overflow: scroll;
+		margin: 0rem auto;
+		border: 0;
+		height: 100%;
+		width: 99%;
+		max-width: 100%;
+		background: #272c26;
+		color: #fff;
+		overflow: auto;
+		box-sizing: border-box;
+		padding: 0;
+		scrollbar-color: yellow #800080;
+		scrollbar-width: thin;
+		position: absolute;
+		left: 0;
+		top: 0;
+		border-radius: 10px;
+	}
+	/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+	.contenedors::-webkit-scrollbar {
+		-webkit-appearance: none;
+		
+	}
+	.contenedors::-webkit-scrollbar:vertical {
+		width:10px;
+	}
+	.contenedors::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+		display: none;
+	} 
+	.contenedors::-webkit-scrollbar:horizontal {
+		height: 10px;
+	}
+	.contenedors::-webkit-scrollbar-thumb {
+		background-color: #797979;
+		border-radius: 20px;
+		border: 2px solid #f1f2f3;
+	}
+	.contenedors::-webkit-scrollbar-track {
+		border-radius: 10px;  
+	}
+	.contenedors {
+		/*Estilos estándar experimentales (Principalmente Firefox)*/
+		scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+		scrollbar-width: thin;
+	}
+
+	
+	div#cuadro-iz-sup-cir{
+		width: 50%;
+		height: 18%;
+		background-color: #d52c27;
+		box-shadow: -5px 0px #5e0000;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 120px;
+		box-shadow: 1px 10px #5e0000;
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+
+	/*----------------  parte derecha  ---------------------*/
+	
+	/*  cuadrado base para pokedex lado izquierdo*/
+    div#cuadro-de{
+		width: 92%;
+		height: 110%;
+		background-color: #d52c27;
+		box-shadow: -5px 0px #5e0000;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 20%;
+		left: 0;
+		z-index: 2;
+	}
+	div#cuadro-de-sup{
+		width: 45%;
+		height: 18%;
+		background-color: #d52c27;
+		box-shadow: -5px 0px #5e0000;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+	
+	div#cuadro-de-sup-com{
+		width: 40%;
+		height: 20%;
+		background-color: transparent;
+		box-shadow: -60px 15px #d52c27;
+		border-bottom-left-radius: 130px;
+		border-top-left-radius: 0px;
+		/*box-shadow: -10px 9px #5e0000;*/
+		float: left;
+		padding: 15px 0 0 15px;
+		position: absolute;
+		top: -2.5%;
+		left: 47.5%;
+		z-index: 2;
+	}
+}
+
+@media all and (min-width: 900px) {
+	div#cuadro-de-sup-com{top: -2%; }
+	div#cuadro-de-sup{ top: -0.25%;}
+	div#tubo-union{ 
+		width: 10%;
+		height: 110%;
+		background-color: #d52c27;
+		box-shadow: -5px 0px #5e0000;
+		position: absolute;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		top: 12%;
+		left: -8%;
+		z-index: 2;
+	}
+	div#tubo-union2{ 
+		width: 10%;
+		height: 110%;
+		background-color: #d52c27;
+		box-shadow: 5px 0px #5e0000;
+		position: absolute;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		top: 12%;
+		left: -8%;
+		z-index: 2;
+	}
+	
+	div#raya-union{ 
+		width: 10%;
+		height: 10%;
+		background-color: transparent;
+		box-shadow: 0px 3px #5e0000;
+		position: absolute;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		top: 15%;
+		left: -8%;
+		z-index: 2;
+	}
+	div#raya-union2{ 
+		width: 10%;
+		height: 10%;
+		background-color: transparent;
+		box-shadow: 0px 3px #5e0000;
+		position: absolute;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		top: 55%;
+		left: -8%;
+		z-index: 2;
+	}
+	div#raya-union3{ 
+		width: 10%;
+		height: 10%;
+		background-color: transparent;
+		box-shadow: 0px 3px #5e0000;
+		position: absolute;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		top: 100%;
+		left: -8%;
+		z-index: 2;
+	}
+}
+
+
+@media all and (min-width: 1200px) {
+	div#izq{width: 28%; left: 21%; height: 150%;}
+	div#der{width: 28%; height: 150%;}
+	div#cuadro-de-sup-com{top: -3.55%; left: 47%; }
+	div#cuadro-de-sup{ top: 0%; border-top-right-radius: 16px;}
+	div#cuadro-medio{height: 150%;}
+	div#cuadro-de{height: 130%;}
+	div#tubo-union{ top: 12%; left: -8%; height: 130%; }
+	div#tubo-union2{ top: 12%; left: -8%; height: 130%; }
+	div#raya-union{ top: 15%; left: -8%; }
+	div#raya-union2{ top: 70%; left: -8%; }
+	div#raya-union3{ top: 120%; left: -8%; }
+}
+
+
+#pokeImg{
+	background-color: #fff;
+}
+
+
+
+
+
+

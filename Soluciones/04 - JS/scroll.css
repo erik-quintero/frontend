@@ -1,0 +1,137 @@
+/*   sroll  */
+
+.contenedors {
+	overflow: scroll;
+    margin: 0rem auto;
+    border: 1px solid #aaa;
+    height: 300px;
+    width: 90%;
+    max-width: 400px;
+    background: #f1f2f3;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 0 1rem;
+	scrollbar-color: yellow #800080;
+    scrollbar-width: thin;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.contenedors::-webkit-scrollbar {
+    -webkit-appearance: none;
+	
+}
+
+.contenedors::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.contenedors::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.contenedors::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.contenedors::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.contenedors::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+.contenedors {
+    /*Estilos estándar experimentales (Principalmente Firefox)*/
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}
+
+
+
+
+
+
+
+.yellowBoxI
+{
+    width: 140px;
+    height: 70px;
+    z-index: 1;
+    background-color: #ffff00;
+
+    position: absolute;
+    top: 415px;
+    left: 25px;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+
+    box-shadow: 0 0 20px #ff6600 inset;
+    -webkit-box-shadow: 0 0 20px #ff6600 inset;
+    -moz-box-shadow: 0 0 20px #ff6600 inset;
+    -o-box-shadow: 0 0 20px #ff6600 inset;
+}
+
+.yellowBoxD
+{
+    width: 140px;
+    height: 70px;
+    z-index: 1;
+    background-color: #ffff00;
+
+    position: absolute;
+    top: 415px;
+    left: 185px;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -o-border-radius: 15px;
+
+    box-shadow: 0 0 20px #ff6600 inset;
+    -webkit-box-shadow: 0 0 20px #ff6600 inset;
+    -moz-box-shadow: 0 0 20px #ff6600 inset;
+    -o-box-shadow: 0 0 20px #ff6600 inset;
+}
+
+
+
+
+
+
+
+
+
+/*    fot   */
+div#fot{
+    position: absolute;
+    margin-top: 60%;
+    top: 95%;
+    left: 30%;
+    background-color: red;
+    color: #fff;
+}
+
+
+
+
+/* body  */
+ 
+body{
+    margin-top: 15%;
+    background-color: #fff;
+    background-image: url("./fondo.png");
+    background-size: 100% 180%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
