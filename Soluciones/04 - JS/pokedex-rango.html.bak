@@ -14,8 +14,8 @@
             
     </div>
 
-    <input type="number" placeholder="cantidad de pokemon a buscar" id="NumInf" name="NumInf"  autofocus formtarget="top">
-    <input type="number" placeholder="numero desde el que se quiere iniciar" id="NumSup" name="NumSup"  autofocus formtarget="top">
+    <input type="number" placeholder="numero inferior" id="NumInf" name="NumInf"  autofocus formtarget="top">
+    <input type="number" placeholder="numero superior" id="NumSup" name="NumSup"  autofocus formtarget="top">
     <button onclick="fetchPokemon()" class="boton-der" > Buscar pokemon </button>
 
 
